@@ -10,7 +10,7 @@ export default function Home() {
           </div>
           <FeaturedProductsSlideshow />
         </div>
-        <div>Information</div>
+        <div>Product detailed information</div>
       </div>
       <div className='h-screen'>
         <div>Hello world</div>

@@ -11,10 +11,18 @@ import "./featured-products-slideshow.css"
 
 // import required modules
 import { Navigation, FreeMode, Autoplay } from "swiper/modules"
+import { ProductCard } from "../product-card/ProductCard"
+import { useContext } from "react"
+import {
+  FeaturedProductsContext,
+  FeaturedProductsContextType,
+} from "@/context/FeaturedProductsContext"
 
-const products = [1, 2, 3, 4, 5]
+// const products = [1, 2, 3, 4, 5]
 
 export const FeaturedProductsSlideshow = () => {
+  const { featuredProducts } = useContext(FeaturedProductsContext) as FeaturedProductsContextType
+  console.log("featuredProducts", featuredProducts)
   return (
     <div className='h-full'>
       <Swiper
@@ -41,11 +49,9 @@ export const FeaturedProductsSlideshow = () => {
         modules={[FreeMode, Navigation, Autoplay]}
         className='mySwiper'
       >
-        {products.map((product, index) => (
+        {featuredProducts.map((product, index) => (
           <SwiperSlide key={index}>
-            <div className='border border-black text-center content-center'>
-              Product {index}
-            </div>
+            <ProductCard product={product} />
           </SwiperSlide>
         ))}
       </Swiper>
