@@ -12,7 +12,7 @@ import "./featured-products-slideshow.css"
 // import required modules
 import { Navigation, FreeMode, Autoplay } from "swiper/modules"
 import { ProductCard } from "../product-card/ProductCard"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import {
   FeaturedProductsContext,
   FeaturedProductsContextType,
@@ -22,6 +22,8 @@ import {
 
 export const FeaturedProductsSlideshow = () => {
   const { featuredProducts } = useContext(FeaturedProductsContext) as FeaturedProductsContextType
+  const [selectedProduct, setSelectedProduct] = useState(0)
+
   console.log("featuredProducts", featuredProducts)
   return (
     <div className='h-full'>
@@ -32,6 +34,7 @@ export const FeaturedProductsSlideshow = () => {
         onRealIndexChange={(e) => {
           console.log("real index change")
           console.log("index", e.realIndex)
+          setSelectedProduct(e.realIndex)
         }}
         navigation={true}
         loop={true}
@@ -51,7 +54,7 @@ export const FeaturedProductsSlideshow = () => {
       >
         {featuredProducts.map((product, index) => (
           <SwiperSlide key={index}>
-            <ProductCard product={product} />
+            <ProductCard active={index === selectedProduct} product={product} />
           </SwiperSlide>
         ))}
       </Swiper>

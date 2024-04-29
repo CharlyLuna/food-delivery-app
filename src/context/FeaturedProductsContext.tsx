@@ -1,5 +1,5 @@
 "use client"
-import { featuredProducts as products } from "@/app/mocks"
+import { featuredProducts as products } from "@/mocks"
 import { Product } from "@/interfaces/product"
 import { createContext, useState } from "react"
 
