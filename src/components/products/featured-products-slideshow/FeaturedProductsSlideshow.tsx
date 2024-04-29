@@ -21,7 +21,9 @@ import {
 // const products = [1, 2, 3, 4, 5]
 
 export const FeaturedProductsSlideshow = () => {
-  const { featuredProducts } = useContext(FeaturedProductsContext) as FeaturedProductsContextType
+  const { featuredProducts, handleHighlightedProduct } = useContext(
+    FeaturedProductsContext
+  ) as FeaturedProductsContextType
   const [selectedProduct, setSelectedProduct] = useState(0)
 
   console.log("featuredProducts", featuredProducts)
@@ -30,19 +32,19 @@ export const FeaturedProductsSlideshow = () => {
       <Swiper
         // spaceBetween={10}
         slidesPerView={1}
-        // autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 4000 }}
         onRealIndexChange={(e) => {
-          console.log("real index change")
-          console.log("index", e.realIndex)
-          setSelectedProduct(e.realIndex)
+          const index = e.realIndex
+          handleHighlightedProduct(featuredProducts[index])
+          setSelectedProduct(index)
         }}
         navigation={true}
         loop={true}
         breakpoints={{
-          760: {
+          640: {
             slidesPerView: 2,
           },
-          1024: {
+          768: {
             slidesPerView: 3,
           },
           1400: {

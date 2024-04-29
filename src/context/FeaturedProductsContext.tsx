@@ -5,14 +5,14 @@ import { createContext, useState } from "react"
 
 export type FeaturedProductsContextType = {
   featuredProducts: Product[]
-  currentHighlightedProduct: any
-  setCurrentHighlightedProduct: (product: Product) => void
+  currentHighlightedProduct: Product
+  handleHighlightedProduct: (product: Product) => void
 }
 
 const initialStateContextState: FeaturedProductsContextType = {
   featuredProducts: [],
-  currentHighlightedProduct: null,
-  setCurrentHighlightedProduct: () => {},
+  currentHighlightedProduct: products[0],
+  handleHighlightedProduct: () => {},
 }
 
 export const FeaturedProductsContext =
@@ -24,14 +24,20 @@ interface Props {
 
 export const FeaturedProductsProvider = ({ children }: Props) => {
   const [featuredProducts] = useState<Product[]>(products)
-  const [currentHighlightedProduct, setCurrentHighlightedProduct] = useState<Product | null>(null)
+  const [currentHighlightedProduct, setCurrentHighlightedProduct] = useState<Product>(
+    featuredProducts[0]
+  )
+
+  const handleHighlightedProduct = (product: Product) => {
+    setCurrentHighlightedProduct(product)
+  }
 
   return (
     <FeaturedProductsContext.Provider
       value={{
         featuredProducts,
         currentHighlightedProduct,
-        setCurrentHighlightedProduct,
+        handleHighlightedProduct,
       }}
     >
       {children}
