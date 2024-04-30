@@ -12,7 +12,7 @@ export const ProductInfoCard = () => {
   ) as FeaturedProductsContextType
   const [activeTab, setActiveTab] = useState<"overview" | "ingredients">("overview")
   return (
-    <div className='flex flex-col gap-8 bg-gray-100/50 rounded-2xl shadow-md h-[600px] p-10'>
+    <div className='flex flex-col gap-8 bg-gray-100/50 rounded-2xl shadow-md h-fit lg:h-[600px] p-10'>
       <div className='flex justify-between'>
         <p className={`${activeTab === "overview" ? "font-bold" : "font-light"}`}>Overview</p>
         <p className={`${activeTab === "ingredients" ? "font-bold" : "font-light"}`}>Ingredients</p>
@@ -23,6 +23,7 @@ export const ProductInfoCard = () => {
       </div>
       <div className='flex flex-col gap-2 fadeInRight'>
         <p className='font-bold text-xl'>{product.category}</p>
+        <p className='font-light'>${product.price}MXN</p>
         <p>{product.description}</p>
       </div>
     </div>
