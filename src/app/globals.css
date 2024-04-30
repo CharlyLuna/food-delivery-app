@@ -5,16 +5,13 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 171, 170, 170;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 225, 225, 225;
+  --color: rgb(201, 201, 201);
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-start-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-start-rgb)))
     rgb(var(--background-end-rgb));
 }
 
@@ -22,4 +19,55 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRightWithDelay {
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
 }

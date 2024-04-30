@@ -28,9 +28,9 @@ export const FeaturedProductsSlideshow = () => {
 
   console.log("featuredProducts", featuredProducts)
   return (
-    <div className='h-full'>
+    <div className='fadeInRightWithDelay'>
       <Swiper
-        // spaceBetween={10}
+        spaceBetween={24}
         slidesPerView={1}
         // autoplay={{ delay: 4000 }}
         onRealIndexChange={(e) => {
@@ -55,7 +55,7 @@ export const FeaturedProductsSlideshow = () => {
         className='mySwiper'
       >
         {featuredProducts.map((product, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide style={{}} key={index}>
             <ProductCard active={index === selectedProduct} product={product} />
           </SwiperSlide>
         ))}
