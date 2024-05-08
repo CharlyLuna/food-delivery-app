@@ -6,4 +6,11 @@ export type Product = {
   image: string
   category: string
   rating: number
+  details: ProductDetails
+}
+
+export type ProductDetails = {
+  numberOfServes: number
+  preparationTime: number
+  calories: string
 }

@@ -1,1 +1,1 @@
-export { featuredProducts } from "./products"
+export { FEATURED_PRODUCTS as featuredProducts } from "./products"

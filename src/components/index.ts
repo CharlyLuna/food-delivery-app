@@ -2,3 +2,5 @@ export { FeaturedProductsSlideshow } from "./products/featured-products-slidesho
 export { ProductCard } from "./products/product-card/ProductCard"
 export { FeaturedBillboard } from "./products/featured-billboard/FeaturedBillboard"
 export { ProductInfoCard } from "./products/product-info-card/ProductInfoCard"
+export { HeroSection } from "./sections/hero-section/HeroSection"
+export { RecipesSection } from "./sections/recipes-section/RecipesSection"
