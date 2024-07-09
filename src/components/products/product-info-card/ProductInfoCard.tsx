@@ -10,15 +10,29 @@ export const ProductInfoCard = () => {
   const { currentHighlightedProduct: product } = useContext(
     FeaturedProductsContext
   ) as FeaturedProductsContextType
-  const [activeTab, setActiveTab] = useState<"overview" | "ingredients">("overview")
+  const [activeTab, setActiveTab] = useState<"overview" | "ingredients">(
+    "overview"
+  )
   return (
-    <div className='flex flex-col gap-8 bg-gray-100/50 rounded-2xl shadow-md h-fit lg:h-[600px] p-10'>
+    <div className='flex flex-col gap-8 bg-gray-100 rounded-2xl shadow-md h-fit lg:h-[600px] p-10'>
       <div className='flex justify-between'>
-        <p className={`${activeTab === "overview" ? "font-bold" : "font-light"}`}>Overview</p>
-        <p className={`${activeTab === "ingredients" ? "font-bold" : "font-light"}`}>Ingredients</p>
+        <p
+          className={`${activeTab === "overview" ? "font-bold" : "font-light"}`}
+        >
+          Overview
+        </p>
+        <p
+          className={`${
+            activeTab === "ingredients" ? "font-bold" : "font-light"
+          }`}
+        >
+          Ingredients
+        </p>
       </div>
       <div className='relative flex justify-center items-end bg-green-200 rounded-2xl p-2 w-[60px] h-[100px]'>
-        <p className='absolute top-0 left-2 text-6xl font-black'>{product.rating}</p>
+        <p className='absolute top-0 left-2 text-6xl font-black'>
+          {product.rating}
+        </p>
         <IoStar size={35} />
       </div>
       <div className='flex flex-col gap-2 fadeInRight'>

@@ -10,15 +10,13 @@ import "swiper/css/navigation"
 import "./featured-products-slideshow.css"
 
 // import required modules
-import { Navigation, FreeMode, Autoplay } from "swiper/modules"
+import { Navigation, Autoplay } from "swiper/modules"
 import { ProductCard } from "../product-card/ProductCard"
 import { useContext, useState } from "react"
 import {
   FeaturedProductsContext,
   FeaturedProductsContextType,
 } from "@/context/FeaturedProductsContext"
-
-// const products = [1, 2, 3, 4, 5]
 
 export const FeaturedProductsSlideshow = () => {
   const { featuredProducts, handleHighlightedProduct } = useContext(
@@ -51,7 +49,7 @@ export const FeaturedProductsSlideshow = () => {
             slidesPerView: 4,
           },
         }}
-        modules={[FreeMode, Navigation, Autoplay]}
+        modules={[Navigation, Autoplay]}
         className='mySwiper'
       >
         {featuredProducts.map((product, index) => (
