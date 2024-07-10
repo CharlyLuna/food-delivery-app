@@ -30,6 +30,7 @@ export const FeaturedProductsSlideshow = () => {
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
+        speed={1500}
         // autoplay={{ delay: 4000 }}
         onRealIndexChange={(e) => {
           const index = e.realIndex
