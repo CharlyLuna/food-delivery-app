@@ -7,3 +7,6 @@ export { HeroSection } from "./sections/hero-section/HeroSection"
 export { RecipesSection } from "./sections/recipes-section/RecipesSection"
 export { ClientsSection } from "./sections/clients-section/ClientsSection"
 export { BenefitsSection } from "./sections/benefits-section/BenefitsSection"
+// UI
+export { Navbar } from "./ui/Navbar"
+export { Footer } from "./ui/Footer"

@@ -15,7 +15,7 @@ export const ClientsSection = () => {
         {CLIENTS_REVIEWS.map((review) => (
           <div
             key={review.name}
-            className='px-10 bg-[#EAEAE9] max-w-[450px] rounded-lg shadow-lg p-4 flex flex-col justify-between gap-4 hover:scale-110 transition-transform duration-500 ease-in-out'
+            className='px-10 bg-gray-100 max-w-[450px] rounded-lg shadow-lg p-4 flex flex-col justify-between gap-4 hover:scale-110 transition-transform duration-500 ease-in-out'
           >
             <p className='text-lg'>{review.review}</p>
             <div>

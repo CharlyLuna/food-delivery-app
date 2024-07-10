@@ -5,18 +5,19 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 171, 170, 170;
-  --background-end-rgb: 225, 225, 225;
+  --background-end-rgb: 240, 240, 240;
   --color: rgb(201, 201, 201);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-start-rgb))
-    )
-    rgb(var(--background-end-rgb));
+    to bottom,
+    transparent,
+    rgb(248, 248, 248) 0%,
+    rgb(207, 207, 207) 48%,
+    rgb(218, 218, 218) 100%
+  );
 }
 
 @layer utilities {

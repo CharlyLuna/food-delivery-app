@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { FeaturedProductsProvider } from "@/context/FeaturedProductsContext"
 import { inter, mainFont } from "@/config/fonts"
 import "../globals.css"
-import { Footer } from "@/components/ui/Footer"
+import { Footer, Navbar } from "@/components"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={mainFont.className}>
+        <Navbar />
         <FeaturedProductsProvider>{children}</FeaturedProductsProvider>
         <Footer />
       </body>
