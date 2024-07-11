@@ -10,7 +10,7 @@ export const ProductCard = ({ product, active }: Props) => {
   return (
     <div
       className={`${active ? "bg-gray-100 shadow-sm" : ""} 
-      flex flex-col justify-center items-center font-normal h-[300px] p-4 text-center rounded-xl `}
+      flex flex-col gap-2 justify-center items-center font-normal h-[300px] p-4 text-center rounded-xl `}
     >
       <Image
         src={product.image}

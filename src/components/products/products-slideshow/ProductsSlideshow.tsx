@@ -1,6 +1,8 @@
 "use client"
-import { useContext, useState } from "react"
+
+import { useState } from "react"
 import { ProductCard } from "../product-card/ProductCard"
+import type { Product } from "@/interfaces/product"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -9,53 +11,55 @@ import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/navigation"
 
-import "./featured-products-slideshow.css"
+import "./products-slideshow.css"
 
 // import required modules
-import { Navigation, Autoplay } from "swiper/modules"
-import {
-  FeaturedProductsContext,
-  FeaturedProductsContextType,
-} from "@/context/FeaturedProductsContext"
+import { Navigation } from "swiper/modules"
+import Link from "next/link"
 
-export const FeaturedProductsSlideshow = () => {
-  const { featuredProducts, handleHighlightedProduct } = useContext(
-    FeaturedProductsContext
-  ) as FeaturedProductsContextType
+interface Props {
+  elements: Product[]
+}
+
+export const ProductsSlideshow = ({ elements }: Props) => {
   const [selectedProduct, setSelectedProduct] = useState(0)
 
-  console.log("featuredProducts", featuredProducts)
+  console.log(elements)
+
   return (
-    <div className='fadeInRightWithDelay'>
+    <div className='w-full'>
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
-        speed={1500}
-        // autoplay={{ delay: 4000 }}
+        speed={1000}
         onRealIndexChange={(e) => {
           const index = e.realIndex
-          handleHighlightedProduct(featuredProducts[index])
           setSelectedProduct(index)
         }}
         navigation={true}
         loop={true}
         breakpoints={{
-          640: {
+          768: {
             slidesPerView: 2,
           },
-          768: {
+          980: {
             slidesPerView: 3,
           },
-          1400: {
+          1240: {
             slidesPerView: 4,
           },
+          1440: {
+            slidesPerView: 5,
+          },
         }}
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation]}
         className='mySwiper'
       >
-        {featuredProducts.map((product, index) => (
+        {elements.map((product, index) => (
           <SwiperSlide style={{}} key={index}>
-            <ProductCard active={index === selectedProduct} product={product} />
+            <Link href={`/product/${product.slug}`}>
+              <ProductCard active product={product} />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

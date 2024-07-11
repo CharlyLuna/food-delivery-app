@@ -6,7 +6,7 @@ const products = TODAY_RECIPES
 
 export const RecipesSection = () => {
   return (
-    <div className='py-24 px-10 h-full bg-[#EAEAE9]'>
+    <div className='py-24 px-10 h-fit bg-[#EAEAE9]'>
       <div className='text-center mb-10'>
         <Image
           className='mx-auto'
