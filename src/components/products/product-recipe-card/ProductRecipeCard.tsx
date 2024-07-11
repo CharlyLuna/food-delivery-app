@@ -11,7 +11,7 @@ export const ProductRecipeCard = ({ product }: Props) => {
   const { details, image } = product
   return (
     <Link
-      href='/product'
+      href={`/product/${product.slug}`}
       className='flex flex-col shadow-md bg-gray-100 w-[250px] text-center p-6 rounded-lg hover:scale-110 transition-transform duration-500 ease-in-out'
     >
       <div className='flex justify-center mb-4'>

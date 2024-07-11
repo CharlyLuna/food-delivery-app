@@ -10,3 +10,4 @@ export { BenefitsSection } from "./sections/benefits-section/BenefitsSection"
 // UI
 export { Navbar } from "./ui/Navbar"
 export { Footer } from "./ui/Footer"
+export { PageNotFound } from "./ui/PageNotFound"

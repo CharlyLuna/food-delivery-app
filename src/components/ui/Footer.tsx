@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const Footer = () => {
   return (
-    <div className='bg-[#c8c8c8] w-full py-1 flex justify-center text-sm'>
+    <div className='bg-[#c8c8c8] w-full flex justify-center text-sm'>
       <h1>
         {RESTAURANT_NAME} | <span>{new Date().getFullYear()}</span>
       </h1>
