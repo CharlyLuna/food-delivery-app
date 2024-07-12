@@ -23,8 +23,12 @@ export const ProductRecipeCard = ({ product }: Props) => {
           width={150}
         />
       </div>
-      <p className='font-bold mb-6'>{product.name}</p>
-      <p className='h-full mb-4'>{product.description}</p>
+      <p className='font-bold mb-6 h-full whitespace-nowrap text-ellipsis overflow-hidden'>
+        {product.name}
+      </p>
+      <p className='h-full whitespace-nowrap text-ellipsis overflow-hidden mb-8'>
+        {product.description}
+      </p>
       <div className='flex justify-between font-bold'>
         <div className='flex flex-col gap-2 items-center'>
           <IoTime size={20} className='mb-2' />

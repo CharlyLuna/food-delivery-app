@@ -6,6 +6,7 @@ import {
 } from "@/context/FeaturedProductsContext"
 import Image from "next/image"
 import { IoCart, IoCartOutline, IoReader } from "react-icons/io5"
+import Link from "next/link"
 
 export const FeaturedBillboard = () => {
   const { currentHighlightedProduct: product, featuredProducts } = useContext(
@@ -38,9 +39,12 @@ export const FeaturedBillboard = () => {
           {product.name}
         </h1>
         <div className='flex gap-4 mt-4'>
-          <button className='flex items-center gap-1 font-light hover:underline'>
+          <Link
+            href={`/product/${product.slug}`}
+            className='flex items-center gap-1 font-light hover:underline'
+          >
             <IoReader /> See details
-          </button>
+          </Link>
           <button className='flex items-center gap-1 font-light hover:underline'>
             <IoCart /> Add to cart
           </button>

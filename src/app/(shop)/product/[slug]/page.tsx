@@ -74,10 +74,10 @@ export default function ProductPage({ params }: Props) {
         </div>
       </div>
       <div className='flex flex-col gap-8 items-center justify-center py-10 px-5 sm:px-20'>
-        <h3 className='text-4xl text-gray-700 xl:text-gray-100 font-bold'>
+        <h3 className='text-2xl md:text-4xl text-gray-700 xl:text-gray-100 font-bold'>
           You might like...
         </h3>
-        <div className='flex justify-center w-full sm:bg-white/30 sm:shadow-xl py-10 rounded-md'>
+        <div className='flex justify-center w-full sm:bg-white/30 sm:shadow-xl sm:py-10 rounded-md'>
           <ProductsSlideshow elements={PRODUCTS} />
         </div>
       </div>
