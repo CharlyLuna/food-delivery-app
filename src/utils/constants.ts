@@ -20,3 +20,5 @@ export const CLIENTS_REVIEWS = [
     image: "/boy-customer-2.avif",
   },
 ]
+
+export const CATEGORIES = ["Salads", "Main course", "Desserts", "Soups"]

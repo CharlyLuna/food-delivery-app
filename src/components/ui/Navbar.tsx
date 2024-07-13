@@ -25,7 +25,7 @@ export const Navbar = () => {
           <Link href='#'>About us</Link>
         </li> */}
         <li>
-          <Link href='#'>Food menu</Link>
+          <Link href='/menu'>Food menu</Link>
         </li>
       </ul>
       <div className='flex gap-4 items-center'>
