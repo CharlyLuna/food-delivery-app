@@ -68,7 +68,7 @@ export const Sidebar = () => {
               <p>Home</p>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href='/about-us'
               onClick={() => closeMenu()}
@@ -77,7 +77,7 @@ export const Sidebar = () => {
               <IoReaderOutline size={30} />
               <p>About us</p>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href='/menu'

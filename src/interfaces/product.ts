@@ -16,3 +16,12 @@ export type ProductDetails = {
   preparationTime: number
   calories: string
 }
+
+export type CartItem = {
+  id: number
+  name: string
+  image: string
+  price: number
+  quantity: number
+  slug: string
+}

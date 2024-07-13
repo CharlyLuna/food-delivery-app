@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { ProductCard } from "../product-card/ProductCard"
 import type { Product } from "@/interfaces/product"
 // Import Swiper React components
@@ -22,20 +21,12 @@ interface Props {
 }
 
 export const ProductsSlideshow = ({ elements }: Props) => {
-  const [selectedProduct, setSelectedProduct] = useState(0)
-
-  console.log(elements)
-
   return (
     <div className='w-full'>
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
         speed={1000}
-        onRealIndexChange={(e) => {
-          const index = e.realIndex
-          setSelectedProduct(index)
-        }}
         navigation={true}
         loop={true}
         breakpoints={{

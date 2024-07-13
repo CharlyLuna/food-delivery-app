@@ -19,23 +19,29 @@ import {
 } from "@/context/FeaturedProductsContext"
 
 export const FeaturedProductsSlideshow = () => {
-  const { featuredProducts, handleHighlightedProduct } = useContext(
-    FeaturedProductsContext
-  ) as FeaturedProductsContextType
+  const {
+    featuredProducts,
+    handleHighlightedProduct,
+    currentHighlightedProduct,
+  } = useContext(FeaturedProductsContext) as FeaturedProductsContextType
   const [selectedProduct, setSelectedProduct] = useState(0)
 
-  console.log("featuredProducts", featuredProducts)
+  console.log({ featuredProducts })
+
   return (
     <div className='fadeInRightWithDelay'>
       <Swiper
+        initialSlide={currentHighlightedProduct.id - 1}
         spaceBetween={24}
         slidesPerView={1}
         speed={1500}
         // autoplay={{ delay: 4000 }}
         onRealIndexChange={(e) => {
           const index = e.realIndex
+          console.log("change in slide")
           handleHighlightedProduct(featuredProducts[index])
           setSelectedProduct(index)
+          console.log({ index })
         }}
         navigation={true}
         loop={true}

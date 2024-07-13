@@ -31,7 +31,7 @@ export const ProductInfoCard = () => {
       </div>
       <div className='relative flex justify-center items-end bg-green-200 rounded-2xl p-2 w-[60px] h-[100px]'>
         <p className='absolute top-0 left-2 text-6xl font-black'>
-          {product.rating}
+          {product.rating.toFixed(1)}
         </p>
         <IoStar size={35} />
       </div>
