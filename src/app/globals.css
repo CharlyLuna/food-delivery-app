@@ -26,13 +26,6 @@ body {
   }
 }
 
-/* .mural-background {
-  background-image: url("/backgrounds/food-background.png");
-  background-repeat: no-repeat;
-  background-position: 125% 10%;
-  background-size: 50%;
-} */
-
 /* Animations */
 .rotateInDownLeft {
   -webkit-animation-name: rotateInDownLeft;

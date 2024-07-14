@@ -1,6 +1,7 @@
 "use client"
 import { useCartStore, useUIStore } from "@/store"
 import { RESTAURANT_NAME } from "@/utils"
+import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { FaRegUserCircle } from "react-icons/fa"
@@ -17,7 +18,14 @@ export const Navbar = () => {
 
   return (
     <nav className='fixed top-0 z-30 bg-white border-b border-b-gray-300 w-full py-2 px-4 sm:px-10 flex justify-between items-center min-h-[5vh] text-gray-700'>
-      <Link href='/' className='font-bold text-lg '>
+      <Link href='/' className='font-bold text-lg flex items-center gap-1'>
+        <Image
+          src={"/cocos-logo.png"}
+          height={50}
+          width={50}
+          alt='Cocos ResFood Logo'
+          className='w-10 h-10'
+        />
         {RESTAURANT_NAME}
       </Link>
       <ul className='hidden md:flex gap-8'>

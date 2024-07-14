@@ -6,7 +6,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Coco's ResFood",
   description:
-    "Landing page for Coco's ResFood, a restaurant that offers a variety of delicious dishes.",
+    "Landing page of Coco's ResFood, a restaurant that offers a variety of delicious dishes.",
 }
 
 export default function RootLayout({
@@ -16,6 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <meta property='og:image' content='/cocos-logo.png' />
+        <meta name='twitter:image' content='/cocos-logo.png' />
+      </head>
       <body className={mainFont.className}>
         <FeaturedProductsProvider>{children}</FeaturedProductsProvider>
       </body>
