@@ -24,8 +24,8 @@ export const Navbar = () => {
         {/* <li>
           <Link href='#'>About us</Link>
         </li> */}
-        <li>
-          <Link href='/menu'>Food menu</Link>
+        <li className='font-bold text-lg hover:bg-gray-200 px-2 py-1 rounded-md transition-colors duration-300'>
+          <Link href='/menu'>Menu</Link>
         </li>
       </ul>
       <div className='flex gap-4 items-center'>

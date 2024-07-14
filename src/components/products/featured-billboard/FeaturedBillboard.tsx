@@ -48,7 +48,7 @@ export const FeaturedBillboard = () => {
       </div>
       <div className='max-w-[450px] overflow-hidden text-center sm:text-start w-fit'>
         <p className='font-bold text-lg'>#{product.id} Most loved dish</p>
-        <h1 className='hidden sm:block text-2xl md:text-4xl xl:text-6xl font-black text-balance'>
+        <h1 className='hidden sm:block text-2xl md:text-4xl xl:text-6xl font-black text-balance max-w-[400px] lg:max-w-[450px]'>
           {product.name}
         </h1>
         <div className='flex gap-4 mt-4'>

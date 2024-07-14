@@ -1,4 +1,4 @@
-export const RESTAURANT_NAME = "Coco's kitchen"
+export const RESTAURANT_NAME = "Coco's ResFood"
 
 export const CLIENTS_REVIEWS = [
   {
