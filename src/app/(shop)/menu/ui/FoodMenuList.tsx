@@ -12,11 +12,11 @@ export const FoodMenuList = () => {
   console.log(productsByCategory.length)
 
   return (
-    <div className='py-10 sm:px-14 md:px-0'>
+    <div className='py-10 sm:px-14 md:px-0 fadeInLeftWithDelay'>
       <FoodCategoriesList
         onCategoryChange={(category: string) => setCategory(category)}
       />
-      <div className='flex w-full lg:w-[90%] rounded-md bg-gray-100/50 py-10 my-10'>
+      <div className='flex w-full lg:w-[90%] rounded-md bg-gray-100/50 py-10 my-10 '>
         <ProductsSlideshow
           elements={productsByCategory}
           breakpoints={{

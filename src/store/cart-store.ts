@@ -3,9 +3,7 @@ import { create } from "zustand"
 import { persist } from "zustand/middleware"
 
 export interface SummaryInformation {
-  subTotal: number
   total: number
-  tax: number
   itemsInCart: number
 }
 
@@ -29,18 +27,14 @@ export const useCartStore = create<State>()(
       },
       getSummaryInformation: () => {
         const { cart } = get()
-        const subTotal = cart.reduce(
+        const total = cart.reduce(
           (acc, item) => acc + item.price * item.quantity,
           0
         )
-        const tax = subTotal * 0.15
-        const total = subTotal + tax
         const itemsInCart = cart.reduce((acc, item) => acc + item.quantity, 0)
 
         return {
-          subTotal,
           total,
-          tax,
           itemsInCart,
         }
       },

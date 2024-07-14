@@ -36,14 +36,14 @@ export const FoodCategoriesList = ({ onCategoryChange }: Props) => {
   }
 
   return (
-    <div className='flex justify-center lg:justify-start gap-4 lg:gap-8 overflow-x-auto'>
+    <div className='flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-8'>
       {CATEGORIES.map((category) => (
         <button
           onClick={() => handleCategoryChange(category.name)}
           className={`${
             selectedCategory === category.name &&
             "bg-teal-600 text-white border-white !border-solid"
-          } transition-all ease-out hover:bg-teal-600 duration-300 hover:text-white hover:border-white hover:border-solid px-6 py-10 min-w-[150px] border-2 border-dashed flex flex-col justify-center items-center border-gray-700 text-gray-700 font-bold my-4`}
+          } transition-all ease-out hover:bg-teal-600 duration-300 hover:text-white hover:border-white hover:border-solid px-6 py-10 min-w-[150px] border-2 border-dashed flex flex-col justify-center items-center border-gray-700 text-gray-700 font-bold`}
           key={category.name}
         >
           {category.icon}

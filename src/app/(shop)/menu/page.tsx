@@ -1,4 +1,8 @@
+import Image from "next/image"
 import { FoodMenuList } from "./ui/FoodMenuList"
+import { RECOMENDED_DISHES } from "@/mocks/products"
+import { RecommendedProductsSplash } from "./ui/RecommendedProductsSplash"
+import { IoArrowForward } from "react-icons/io5"
 
 export default function MenuPage() {
   return (
@@ -21,7 +25,20 @@ export default function MenuPage() {
         Menu of the week
       </h1>
       <FoodMenuList />
-      <div></div>
+      <div className='pb-16'>
+        <h2 className='font-bold text-gray-700 text-4xl mb-4 text-center lg:text-start'>
+          Eat one of the most tasting dishes!
+        </h2>
+        <RecommendedProductsSplash />
+      </div>
+      <div className='text-center text-white pb-10'>
+        <p className='text-2xl lg:text-3xl mb-2'>
+          Either you want healthy meal or tasty one, we have it all!
+        </p>
+        <p className='flex text-lg lg:text-2xl justify-center gap-2 items-center'>
+          <IoArrowForward /> Order your favorite dish now!
+        </p>
+      </div>
     </div>
   )
 }
