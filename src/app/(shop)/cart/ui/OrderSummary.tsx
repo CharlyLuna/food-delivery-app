@@ -38,7 +38,7 @@ export const OrderSummary = () => {
       <p>Shipping</p>
       <p className='text-right'>$2.00 USD</p>
       <p className='mt-4 text-2xl'>Total</p>
-      <p className='mt-4 text-2xl text-right'>${total + 2} USD</p>
+      <p className='mt-4 text-2xl text-right'>${(total + 2).toFixed(2)} USD</p>
     </div>
   )
 }
