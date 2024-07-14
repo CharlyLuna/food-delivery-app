@@ -18,29 +18,40 @@ import Link from "next/link"
 
 interface Props {
   elements: Product[]
+  breakpoints?: Record<string, number>
+  loop?: boolean
+  style?: React.CSSProperties
 }
 
-export const ProductsSlideshow = ({ elements }: Props) => {
+export const ProductsSlideshow = ({
+  elements,
+  breakpoints,
+  loop = true,
+  style,
+}: Props) => {
+  console.log(breakpoints)
+
   return (
     <div className='w-full'>
       <Swiper
+        style={style}
         spaceBetween={24}
         slidesPerView={1}
         speed={1000}
         navigation={true}
-        loop={true}
+        loop={loop}
         breakpoints={{
           768: {
-            slidesPerView: 2,
+            slidesPerView: breakpoints?.["768"] ?? 2,
           },
           980: {
-            slidesPerView: 3,
+            slidesPerView: breakpoints?.["980"] ?? 3,
           },
           1240: {
-            slidesPerView: 4,
+            slidesPerView: breakpoints?.["1240"] ?? 4,
           },
           1440: {
-            slidesPerView: 5,
+            slidesPerView: breakpoints?.["1440"] ?? 5,
           },
         }}
         modules={[Navigation]}
