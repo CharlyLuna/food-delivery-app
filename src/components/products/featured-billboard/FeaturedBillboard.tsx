@@ -16,8 +16,6 @@ export const FeaturedBillboard = () => {
   const [animate, setAnimate] = useState(true)
   const addProductToCart = useCartStore((state) => state.AddProductToCart)
 
-  // const index = featuredProducts.findIndex((p) => p.id === product.id)
-
   useEffect(() => {
     setAnimate(true)
   }, [product])

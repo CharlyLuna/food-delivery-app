@@ -1,14 +1,38 @@
-import { ProductsSlideshow } from "@/components"
-import { Product } from "@/interfaces/product"
-import { DISHES } from "@/mocks/products"
-import Image from "next/image"
+import { Metadata, ResolvingMetadata } from "next"
 import { notFound } from "next/navigation"
-import { DetailsCard } from "./ui/DetailsCard"
+import Image from "next/image"
 import { IngredientsCard } from "./ui/IngredientsCard"
+import { DetailsCard } from "./ui/DetailsCard"
+import { ProductsSlideshow } from "@/components"
+import { DISHES } from "@/mocks/products"
+import type { Product } from "@/interfaces/product"
 
 interface Props {
   params: {
     slug: string
+  }
+}
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const slug = params.slug
+
+  // fetch data
+  const product: Product | undefined = DISHES.find(
+    (product) => product.slug === slug
+  )
+
+  return {
+    title: product?.name ?? "product not found",
+    description: product?.description ?? "",
+    openGraph: {
+      title: product?.name ?? "product not found",
+      description: product?.description ?? "",
+      images: [product?.image ?? ""],
+    },
   }
 }
 

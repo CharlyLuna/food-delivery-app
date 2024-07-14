@@ -39,7 +39,7 @@ export const ProductInfoCard = () => {
       </div>
       <div className='flex-col gap-2 fadeInRight'>
         <p className='font-bold text-xl'>{product.category}</p>
-        <p className='font-light'>${product.price}MXN</p>
+        <p className='font-light'>${product.price}USD</p>
         {activeTab === "overview" ? (
           <p>{product.description.split(" ").slice(0, 24).join(" ") + "..."}</p>
         ) : (

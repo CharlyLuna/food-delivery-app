@@ -13,7 +13,7 @@ export const DISHES = [
       "lemon",
     ],
     price: 12.99,
-    image: "/product-images/grilled-chicken-caesar-salad.png",
+    image: "/product-images/grilled-chicken-caesar-salad.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 20,
@@ -21,7 +21,7 @@ export const DISHES = [
     },
     category: "Salad",
     slug: "grilled-chicken-caesar-salad",
-    rating: 4,
+    rating: 4.8,
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const DISHES = [
       "salt",
     ],
     price: 14.5,
-    image: "/product-images/margherita-pizza.png",
+    image: "/product-images/margherita-pizza.webp",
     details: {
       numberOfServes: 2,
       preparationTime: 30,
@@ -45,7 +45,7 @@ export const DISHES = [
     },
     category: "Main Course",
     slug: "margherita-pizza",
-    rating: 5,
+    rating: 4.5,
   },
   {
     id: 3,
@@ -67,7 +67,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 22.0,
-    image: "/product-images/beef-bourguignon.png",
+    image: "/product-images/beef-bourguignon.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 90,
@@ -75,7 +75,7 @@ export const DISHES = [
     },
     category: "Main Course",
     slug: "beef-bourguignon",
-    rating: 5,
+    rating: 4.9,
   },
   {
     id: 4,
@@ -91,7 +91,7 @@ export const DISHES = [
       "salt",
     ],
     price: 15.0,
-    image: "/product-images/spaghetti-carbonara.png",
+    image: "/product-images/spaghetti-carbonara.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 25,
@@ -99,7 +99,7 @@ export const DISHES = [
     },
     category: "Main Course",
     slug: "spaghetti-carbonara",
-    rating: 4,
+    rating: 4.4,
   },
   {
     id: 5,
@@ -116,7 +116,7 @@ export const DISHES = [
       "Marsala wine",
     ],
     price: 8.5,
-    image: "/product-images/tiramisu.png",
+    image: "/product-images/tiramisu.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 45,
@@ -139,7 +139,7 @@ export const DISHES = [
       "dashi stock",
     ],
     price: 4.5,
-    image: "/product-images/miso-soup.png",
+    image: "/product-images/miso-soup.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 15,
@@ -166,7 +166,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 13.0,
-    image: "/product-images/vegan-buddha-bowl.png",
+    image: "/product-images/vegan-buddha-bowl.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 30,
@@ -202,7 +202,7 @@ export const DISHES = [
       preparationTime: 120,
       calories: "800 kcal",
     },
-    image: "/product-images/lamb-rogan-josh.png",
+    image: "/product-images/lamb-rogan-josh.webp",
     category: "Main Course",
     slug: "lamb-rogan-josh",
     rating: 5,
@@ -224,7 +224,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 19.0,
-    image: "/product-images/shrimp-scampi.png",
+    image: "/product-images/shrimp-scampi.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 25,
@@ -248,7 +248,7 @@ export const DISHES = [
       "vanilla extract",
     ],
     price: 9.0,
-    image: "/product-images/chocolate-lava-cake.png",
+    image: "/product-images/chocolate-lava-cake.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 20,
@@ -277,7 +277,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 16.0,
-    image: "/product-images/lobster-bisque.png",
+    image: "/product-images/lobster-bisque.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 45,
@@ -302,7 +302,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 10.0,
-    image: "/product-images/caprese-salad.png",
+    image: "/product-images/caprese-salad.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 15,
@@ -331,7 +331,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 14.0,
-    image: "/product-images/ratatouille.png",
+    image: "/product-images/ratatouille.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 60,
@@ -363,7 +363,7 @@ export const DISHES = [
       "pepper",
     ],
     price: 17.0,
-    image: "/product-images/greek-gyro-platter.png",
+    image: "/product-images/greek-gyro-platter.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 30,
@@ -388,7 +388,7 @@ export const DISHES = [
       "sour cream",
     ],
     price: 7.5,
-    image: "/product-images/new-york-cheesecake.png",
+    image: "/product-images/new-york-cheesecake.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 60,
@@ -415,7 +415,7 @@ export const DISHES = [
       "salt",
       "pepper",
     ],
-    image: "/product-images/mediterranean-quinoa-salad.png",
+    image: "/product-images/mediterranean-quinoa-salad.webp",
     price: 12.0,
     details: {
       numberOfServes: 1,
@@ -443,7 +443,7 @@ export const DISHES = [
       "chili flakes",
       "sugar",
     ],
-    image: "/product-images/thai-mango-salad.png",
+    image: "/product-images/thai-mango-salad.webp",
     price: 11.0,
     details: {
       numberOfServes: 1,
@@ -471,7 +471,7 @@ export const DISHES = [
       "chili paste",
       "cilantro",
     ],
-    image: "/product-images/tom-yum-soup.png",
+    image: "/product-images/tom-yum-soup.webp",
     price: 9.5,
     details: {
       numberOfServes: 1,
@@ -499,7 +499,7 @@ export const DISHES = [
       "salt",
       "pepper",
     ],
-    image: "/product-images/french-onion-soup.png",
+    image: "/product-images/french-onion-soup.webp",
     price: 10.0,
     details: {
       numberOfServes: 1,
@@ -509,125 +509,6 @@ export const DISHES = [
     category: "Soup",
     slug: "french-onion-soup",
     rating: 5,
-  },
-]
-
-export const RECOMENDED_DISHES = [
-  {
-    id: 19,
-    name: "French Onion Soup",
-    description:
-      "Our French Onion Soup is a classic, featuring caramelized onions simmered in a rich beef broth, topped with a slice of toasted baguette and melted Gruyère cheese. This hearty and comforting soup is perfect for warming up on a chilly day.",
-    ingredients: [
-      "Onions",
-      "beef broth",
-      "baguette",
-      "Gruyère cheese",
-      "butter",
-      "thyme",
-      "bay leaves",
-      "white wine",
-      "salt",
-      "pepper",
-    ],
-    image: "/product-images/french-onion-soup.png",
-    price: 10.0,
-    details: {
-      numberOfServes: 1,
-      preparationTime: 45,
-      calories: "350 kcal",
-    },
-    category: "Soup",
-    slug: "french-onion-soup",
-    rating: 5,
-  },
-  {
-    id: 8,
-    name: "Lamb Rogan Josh",
-    description:
-      "Lamb Rogan Josh is a classic Indian curry featuring tender pieces of lamb slow-cooked in a rich and aromatic sauce made with yogurt, tomatoes, and a blend of traditional spices. Served with basmati rice or naan, this dish offers a delightful and hearty meal with deep, savory flavors.",
-    ingredients: [
-      "Lamb",
-      "yogurt",
-      "tomatoes",
-      "onions",
-      "garlic",
-      "ginger",
-      "coriander",
-      "cumin",
-      "turmeric",
-      "chili powder",
-      "garam masala",
-      "salt",
-      "pepper",
-    ],
-    price: 20.0,
-    details: {
-      numberOfServes: 1,
-      preparationTime: 120,
-      calories: "800 kcal",
-    },
-    image: "/product-images/lamb-rogan-josh.png",
-    category: "Main Course",
-    slug: "lamb-rogan-josh",
-    rating: 5,
-  },
-  {
-    id: 15,
-    name: "New York Cheesecake",
-    description:
-      "Indulge in the creamy and rich texture of our New York Cheesecake, made with the finest cream cheese and a buttery graham cracker crust. Topped with a choice of fresh berries or classic caramel, it's a dessert that promises pure satisfaction.",
-    ingredients: [
-      "Cream cheese",
-      "graham crackers",
-      "butter",
-      "sugar",
-      "eggs",
-      "vanilla extract",
-      "sour cream",
-    ],
-    price: 7.5,
-    image: "/product-images/new-york-cheesecake.png",
-    details: {
-      numberOfServes: 1,
-      preparationTime: 60,
-      calories: "500 kcal",
-    },
-    category: "Dessert",
-    slug: "new-york-cheesecake",
-    rating: 5,
-  },
-  {
-    id: 14,
-    name: "Greek Gyro Platter",
-    description:
-      "Our Greek Gyro Platter features tender slices of seasoned gyro meat, served with fluffy pita bread, tzatziki sauce, fresh vegetables, and a side of Greek salad. It's a hearty and delicious meal that brings the flavors of Greece to your table.",
-    ingredients: [
-      "Gyro meat",
-      "pita bread",
-      "tzatziki sauce",
-      "tomatoes",
-      "onions",
-      "lettuce",
-      "cucumbers",
-      "feta cheese",
-      "olives",
-      "olive oil",
-      "lemon juice",
-      "oregano",
-      "salt",
-      "pepper",
-    ],
-    price: 17.0,
-    image: "/product-images/greek-gyro-platter.png",
-    details: {
-      numberOfServes: 1,
-      preparationTime: 30,
-      calories: "800 kcal",
-    },
-    category: "Main Course",
-    slug: "greek-gyro-platter",
-    rating: 4,
   },
 ]
 
@@ -641,7 +522,7 @@ export const RECOMENDED_DISHES = [
 //       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 //     category: "Sandwiches and Wraps",
 //     rating: 4.5,
-//     image: "/product-images/sandwich-2.png",
+//     image: "/product-images/sandwich-2.webp",
 //     ingredients: ["bread", "cheese", "tomato", "lettuce"],
 //     details: {
 //       numberOfServes: 2,
@@ -658,7 +539,7 @@ export const RECOMENDED_DISHES = [
 //     category: "Italian pastas",
 //     ingredients: ["spaghetti", "tomato sauce", "onion", "garlic"],
 //     rating: 4.5,
-//     image: "/product-images/spaghetti-2.png",
+//     image: "/product-images/spaghetti-2.webp",
 //     details: {
 //       numberOfServes: 2,
 //       preparationTime: 20,
@@ -675,7 +556,7 @@ export const RECOMENDED_DISHES = [
 //       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 //     category: "Entrees",
 //     rating: 4.5,
-//     image: "/product-images/grilled-chicken-caesar-salad.png",
+//     image: "/product-images/grilled-chicken-caesar-salad.webp",
 //     details: {
 //       numberOfServes: 2,
 //       preparationTime: 20,
@@ -692,7 +573,7 @@ export const RECOMENDED_DISHES = [
 //       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 //     category: "Italian pastas",
 //     rating: 4.5,
-//     image: "/product-images/spaghetti-2.png",
+//     image: "/product-images/spaghetti-2.webp",
 //     details: {
 //       numberOfServes: 2,
 //       preparationTime: 20,
@@ -709,7 +590,7 @@ export const RECOMENDED_DISHES = [
 //       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 //     category: "Italian pastas",
 //     rating: 4.5,
-//     image: "/product-images/spaghetti-2.png",
+//     image: "/product-images/spaghetti-2.webp",
 //     details: {
 //       numberOfServes: 2,
 //       preparationTime: 20,
@@ -733,7 +614,7 @@ export const FEATURED_PRODUCTS = [
       "lemon",
     ],
     price: 12.99,
-    image: "/product-images/grilled-chicken-caesar-salad.png",
+    image: "/product-images/grilled-chicken-caesar-salad.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 20,
@@ -741,7 +622,7 @@ export const FEATURED_PRODUCTS = [
     },
     category: "Salad",
     slug: "grilled-chicken-caesar-salad",
-    rating: 4,
+    rating: 4.8,
   },
   {
     id: 2,
@@ -757,7 +638,7 @@ export const FEATURED_PRODUCTS = [
       "salt",
     ],
     price: 14.5,
-    image: "/product-images/margherita-pizza.png",
+    image: "/product-images/margherita-pizza.webp",
     details: {
       numberOfServes: 2,
       preparationTime: 30,
@@ -765,7 +646,7 @@ export const FEATURED_PRODUCTS = [
     },
     category: "Main Course",
     slug: "margherita-pizza",
-    rating: 5,
+    rating: 4.5,
   },
   {
     id: 3,
@@ -787,7 +668,7 @@ export const FEATURED_PRODUCTS = [
       "pepper",
     ],
     price: 22.0,
-    image: "/product-images/beef-bourguignon.png",
+    image: "/product-images/beef-bourguignon.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 90,
@@ -795,7 +676,7 @@ export const FEATURED_PRODUCTS = [
     },
     category: "Main Course",
     slug: "beef-bourguignon",
-    rating: 5,
+    rating: 4.9,
   },
   {
     id: 4,
@@ -811,7 +692,7 @@ export const FEATURED_PRODUCTS = [
       "salt",
     ],
     price: 15.0,
-    image: "/product-images/spaghetti-carbonara.png",
+    image: "/product-images/spaghetti-carbonara.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 25,
@@ -819,7 +700,7 @@ export const FEATURED_PRODUCTS = [
     },
     category: "Main Course",
     slug: "spaghetti-carbonara",
-    rating: 4,
+    rating: 4.4,
   },
   {
     id: 5,
@@ -836,7 +717,7 @@ export const FEATURED_PRODUCTS = [
       "Marsala wine",
     ],
     price: 8.5,
-    image: "/product-images/tiramisu.png",
+    image: "/product-images/tiramisu.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 45,
@@ -862,7 +743,7 @@ export const TODAY_RECIPES = [
       "dashi stock",
     ],
     price: 4.5,
-    image: "/product-images/miso-soup.png",
+    image: "/product-images/miso-soup.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 15,
@@ -889,7 +770,7 @@ export const TODAY_RECIPES = [
       "pepper",
     ],
     price: 13.0,
-    image: "/product-images/vegan-buddha-bowl.png",
+    image: "/product-images/vegan-buddha-bowl.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 30,
@@ -925,7 +806,7 @@ export const TODAY_RECIPES = [
       preparationTime: 120,
       calories: "800 kcal",
     },
-    image: "/product-images/lamb-rogan-josh.png",
+    image: "/product-images/lamb-rogan-josh.webp",
     category: "Main Course",
     slug: "lamb-rogan-josh",
     rating: 5,
@@ -947,7 +828,7 @@ export const TODAY_RECIPES = [
       "pepper",
     ],
     price: 19.0,
-    image: "/product-images/shrimp-scampi.png",
+    image: "/product-images/shrimp-scampi.webp",
     details: {
       numberOfServes: 1,
       preparationTime: 25,
