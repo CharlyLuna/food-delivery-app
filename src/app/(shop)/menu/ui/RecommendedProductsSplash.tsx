@@ -6,7 +6,7 @@ export const RecommendedProductsSplash = () => {
     <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-0 px-4'>
       <div className='group/card1 relative flex justify-center items-center bg-blue-600 min-h-[300px] lg:min-h-[500px] w-full p-2 lg:-skew-x-3'>
         <Image
-          src='/product-images/french-onion-soup.png'
+          src='/product-images/french-onion-soup.webp'
           alt='French Onion Soup'
           width={300}
           height={300}
@@ -24,7 +24,7 @@ export const RecommendedProductsSplash = () => {
       </div>
       <div className='group/card2 relative flex justify-center items-center bg-orange-600 min-h-[300px] lg:min-h-[500px] w-full p-2 lg:-skew-x-3'>
         <Image
-          src='/product-images/lamb-rogan-josh.png'
+          src='/product-images/lamb-rogan-josh.webp'
           alt='Lamb Rogan Josh'
           width={300}
           height={300}
@@ -42,7 +42,7 @@ export const RecommendedProductsSplash = () => {
       </div>
       <div className='group/card3 relative flex justify-center items-center bg-purple-600 min-h-[300px] lg:min-h-[500px] w-full p-2 lg:-skew-x-3'>
         <Image
-          src='/product-images/new-york-cheesecake.png'
+          src='/product-images/new-york-cheesecake.webp'
           alt='New York Cheesecake'
           width={300}
           height={300}
@@ -60,7 +60,7 @@ export const RecommendedProductsSplash = () => {
       </div>
       <div className='group/card4 relative flex justify-center items-center bg-yellow-500 min-h-[300px] lg:min-h-[500px] w-full p-2 lg:-skew-x-3'>
         <Image
-          src='/product-images/greek-gyro-platter.png'
+          src='/product-images/greek-gyro-platter.webp'
           alt='Greek Gyro Platter'
           width={300}
           height={300}

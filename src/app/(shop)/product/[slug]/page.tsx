@@ -72,7 +72,7 @@ export default function ProductPage({ params }: Props) {
           width={500}
           alt={product.name}
           priority
-          className='mt-10 lg:mt-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 h-[30vh] w-[30vh] sm:h-[40vw] sm:w-[40vw] xl:h-[33vw] xl:w-[33vw] object-cover rounded-lg z-20'
+          className='fadeIn mt-10 lg:mt-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 h-[30vh] w-[30vh] sm:h-[40vw] sm:w-[40vw] xl:h-[35vw] xl:w-[35vw] object-cover rounded-lg z-20'
         />
         <DetailsCard product={product} />
         <IngredientsCard product={product} />
